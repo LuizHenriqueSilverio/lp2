@@ -24,19 +24,16 @@ public class Ponto{
 		System.out.println("Luiz Henrique");
 		Ponto p1 = new Ponto();
 		Ponto p2 = new Ponto();
-		p1.setX(10);
-		p1.setY(20);
-		p1.getX();
-		p1.getY();
+		p1.setX(50);
+		p1.setY(40);
 		p2.setX(30);
-		p2.setY(40);
-		p2.getX();
-		p2.getY();
-		Ponto p3 = new Ponto();
-		p3.x = 50; p3.y = 70;
-		p3 = p1;
-		System.out.println(p3.x+ "-" +p3.y);
-		Ponto p4 = p3;
+		p2.setY(20);
+		double distY = p1.getY() - p2.getY();
+		double distX = p1.getX() - p2.getX();
+		distX = Math.pow(distX, 2);
+		distY = Math.pow(distY, 2);
+		double diagonal = distX + distY;
+		System.out.println(Math.sqrt(diagonal));
 	}
 }
 
