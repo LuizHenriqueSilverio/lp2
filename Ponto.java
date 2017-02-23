@@ -36,6 +36,15 @@ public class Ponto{
 		distY = Math.pow(distY, 2);
 		double diagonal = distX + distY;
 		System.out.println(Math.sqrt(diagonal));
+		Reta r1 = new Reta();
+		r1.setP1(p1);
+		r1.setP2(p2);
+		r1.getP1().setX(30);
+		r1.getP1().setY(40);
+		System.out.println("Ponto X(Reta 1, Ponto 1): "+ r1.getP1().getX());
+		System.out.println("Ponto Y(Reta 1, Ponto 1): "+ r1.getP1().getY());
+		System.out.println("Ponto X(Reta 1, Ponto 2): "+ r1.getP2().getX());
+		System.out.println("Ponto Y(Reta 1, Ponto 2): "+ r1.getP2().getY());
 	}
 }
 
