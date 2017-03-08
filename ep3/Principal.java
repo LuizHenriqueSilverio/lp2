@@ -17,8 +17,8 @@ public class Principal{
 		Aluno aluno5 = new Aluno();
 		aluno5.setAluno("Jailson Mendes", 30);
 		alunos.add(aluno5);
-		for(int i; i = 0; i++){
-			System.out.println()
+		for(int i = 0;i < alunos.size(); i++){
+			System.out.println(Aluno.get(i).getNome() + " - " + Aluno.get(i).getIdade());
 		}
 	}
 }
